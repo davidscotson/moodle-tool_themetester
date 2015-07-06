@@ -1,6 +1,7 @@
 <?php
 
 require_once(dirname(__FILE__) . '/../../../config.php');
+require_once(dirname(__FILE__) . '/lib.php');
 require_once($CFG->libdir . '/adminlib.php');
 
 $layout = optional_param('layout', null, PARAM_ALPHANUM);
@@ -101,6 +102,7 @@ if ($layout) {
 }
 
 admin_externalpage_setup('toolthemetester');
+tool_themetester_add_pretend_block();
 
 echo $OUTPUT->header();
 

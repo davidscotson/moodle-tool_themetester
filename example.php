@@ -1,6 +1,7 @@
 <?php
 
 require_once(dirname(__FILE__) . '/../../../config.php');
+require_once(dirname(__FILE__) . '/lib.php');
 require_once($CFG->libdir . '/adminlib.php');
 require_once('lib.php');
 
@@ -20,6 +21,7 @@ $PAGE->requires->js('/admin/tool/themetester/google-code-prettify/prettify.js');
 $PAGE->requires->js_init_call('M.tool_themetester.prettyprint');
 
 admin_externalpage_setup('toolthemetester');
+tool_themetester_add_pretend_block();
 echo $OUTPUT->header();
 
 echo html_writer::link(new moodle_url('index.php'), '&laquo; Back to index');
@@ -30,7 +32,7 @@ echo $OUTPUT->box('This is an example of how we could use a single <a href="exam
 echo $OUTPUT->container('<p>This is the code you should use to create a top level heading:</p>');
 
 echo '<pre class="prettyprint linenums lang-php">';
-echo get_html_output('example.txt');
+echo tool_themetester_get_html_output('example.txt');
 echo '</pre>';
 
 echo $OUTPUT->container('<p>Which will look like this:</p>');
@@ -42,7 +44,7 @@ echo '</div>';
 echo $OUTPUT->container('<p>and here is the HTML output that is generated:</p>');
 
 echo '<pre class="prettyprint linenums lang-html">';
-echo get_source_output('example.txt');
+echo tool_themetester_get_source_output('example.txt');
 echo '</pre>';
 
 

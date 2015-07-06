@@ -10,6 +10,7 @@
  **/
 
 require_once(dirname(__FILE__) . '/../../../config.php');
+require_once(dirname(__FILE__) . '/lib.php');
 require_once($CFG->libdir . '/adminlib.php');
 require_once($CFG->dirroot.'/lib/formslib.php');
 
@@ -24,6 +25,7 @@ $PAGE->set_title($strheading);
 $PAGE->set_heading($strheading);
 
 admin_externalpage_setup('toolthemetester');
+tool_themetester_add_pretend_block();
 
 echo $OUTPUT->header();
 

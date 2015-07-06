@@ -1,6 +1,7 @@
 <?php
 
 require_once(dirname(__FILE__) . '/../../../config.php');
+require_once(dirname(__FILE__) . '/lib.php');
 require_once($CFG->libdir . '/adminlib.php');
 
 $strheading = 'Element Library';
@@ -14,6 +15,7 @@ $PAGE->set_title($strheading);
 $PAGE->set_heading($strheading);
 
 admin_externalpage_setup('toolthemetester');
+tool_themetester_add_pretend_block();
 
 echo $OUTPUT->header();
 
@@ -25,24 +27,7 @@ echo $OUTPUT->container('This page contains a set of sample elements used on thi
 echo $OUTPUT->container_start();
 echo $OUTPUT->heading('Moodle elements', 3);
 
-$contents = array(
-    'Headings' => 'headings.php',
-    'Common tags' => 'common.php',
-    'Lists' => 'lists.php',
-    'Tables' => 'tables.php',
-    'Form elements' => 'forms.php',
-    'Moodle form elements' => 'mform.php',
-    'Moodle tab bar' => 'tabs.php',
-    'Paging bar' => 'paging.php',
-    'Images' => 'images.php',
-    'Notifications' => 'notifications.php',
-    'Progress Bars' => 'progress.php',
-    'Page Layouts' => 'pagelayouts.php',
-    'Bootstrap CSS' => 'bs_css.php',
-    'Bootstrap Components' => 'bs_components.php',
-    'Bootstrap Javascript' => 'bs_javascript.php',
-    'Bootswatch Examples' => 'bootswatch.php',
-);
+$contents = tool_themetester_get_items();
 
 echo html_writer::start_tag('ul');
 foreach ($contents as $title => $file) {

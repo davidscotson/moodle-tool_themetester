@@ -1,6 +1,7 @@
 <?php
 
 require_once(dirname(__FILE__) . '/../../../config.php');
+require_once(dirname(__FILE__) . '/lib.php');
 require_once($CFG->libdir . '/adminlib.php');
 
 $strheading = 'Element Library: Progress Bars';
@@ -15,6 +16,7 @@ $PAGE->set_heading($strheading);
 $perpetualjs = new moodle_url('perpetual.js');
 $PAGE->requires->js($perpetualjs);
 admin_externalpage_setup('toolthemetester');
+tool_themetester_add_pretend_block();
 
 echo $OUTPUT->header();
 

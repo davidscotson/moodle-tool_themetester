@@ -1,6 +1,7 @@
 <?php
 
 require_once(dirname(__FILE__) . '/../../../config.php');
+require_once(dirname(__FILE__) . '/lib.php');
 require_once($CFG->libdir . '/adminlib.php');
 
 $strheading = 'Element Library: Bootstrap 3 CSS';
@@ -14,6 +15,7 @@ $PAGE->set_title($strheading);
 $PAGE->set_heading($strheading);
 $PAGE->requires->css('/admin/tool/themetester/bs_docs.min.css');
 admin_externalpage_setup('toolthemetester');
+tool_themetester_add_pretend_block();
 
 echo $OUTPUT->header();
 

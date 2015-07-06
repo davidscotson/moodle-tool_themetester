@@ -1,6 +1,7 @@
 <?php
 
 require_once(dirname(__FILE__) . '/../../../config.php');
+require_once(dirname(__FILE__) . '/lib.php');
 require_once($CFG->libdir . '/adminlib.php');
 
 $strheading = 'Element Library: Bootswatch 3 CSS';
@@ -12,6 +13,7 @@ $PAGE->set_url($url);
 $PAGE->set_title($strheading);
 $PAGE->set_heading($strheading);
 admin_externalpage_setup('toolthemetester');
+tool_themetester_add_pretend_block();
 
 echo $OUTPUT->header();
 
@@ -1159,7 +1161,6 @@ echo $OUTPUT->heading($strheading);
           </div>
         </div>
       </div>
-    </div>
 <?php
 //TODO add JS from original site to make the examples work.
 echo $OUTPUT->footer();
