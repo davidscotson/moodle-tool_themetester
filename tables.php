@@ -4,7 +4,7 @@ require_once(dirname(__FILE__) . '/../../../config.php');
 require_once($CFG->libdir . '/adminlib.php');
 
 $strheading = 'Element Library: Tables';
-$url = new moodle_url('/admin/tool/elementlibrary/tables.php');
+$url = new moodle_url('/admin/tool/themetester/tables.php');
 
 // Start setting up the page
 $params = array();
@@ -13,7 +13,7 @@ $PAGE->set_url($url);
 $PAGE->set_title($strheading);
 $PAGE->set_heading($strheading);
 
-admin_externalpage_setup('toolelementlibrary');
+admin_externalpage_setup('toolthemetester');
 
 echo $OUTPUT->header();
 

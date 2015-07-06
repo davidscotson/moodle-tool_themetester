@@ -4,7 +4,7 @@ require_once(dirname(__FILE__) . '/../../../config.php');
 require_once($CFG->libdir . '/adminlib.php');
 
 $strheading = 'Element Library: Notifications';
-$url = new moodle_url('/admin/tool/elementlibrary/notifications.php');
+$url = new moodle_url('/admin/tool/themetester/notifications.php');
 
 // Start setting up the page
 $params = array();
@@ -13,11 +13,11 @@ $PAGE->set_url($url);
 $PAGE->set_title($strheading);
 $PAGE->set_heading($strheading);
 
-admin_externalpage_setup('toolelementlibrary');
+admin_externalpage_setup('toolthemetester');
 
 echo $OUTPUT->header();
 
-echo html_writer::link(new moodle_url('/admin/tool/elementlibrary/'), '&laquo; Back to index');
+echo html_writer::link(new moodle_url('/admin/tool/themetester/'), '&laquo; Back to index');
 echo $OUTPUT->heading($strheading);
 
 

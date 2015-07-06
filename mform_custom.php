@@ -14,7 +14,7 @@ require_once($CFG->libdir . '/adminlib.php');
 require_once($CFG->dirroot.'/lib/formslib.php');
 
 $strheading = 'Element Library: Moodle Forms: Custom Forms';
-$url = new moodle_url('/admin/tool/elementlibrary/mform_custom.php');
+$url = new moodle_url('/admin/tool/themetester/mform_custom.php');
 
 // Start setting up the page
 $params = array();
@@ -23,7 +23,7 @@ $PAGE->set_url($url);
 $PAGE->set_title($strheading);
 $PAGE->set_heading($strheading);
 
-admin_externalpage_setup('toolelementlibrary');
+admin_externalpage_setup('toolthemetester');
 
 echo $OUTPUT->header();
 

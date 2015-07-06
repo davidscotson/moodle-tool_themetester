@@ -18,7 +18,7 @@
  * Element library settings
  *
  * @package    tool
- * @subpackage elementlibrary
+ * @subpackage themetester
  * @copyright  2012 Simon Coggins
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die;
 
 if ($hassiteconfig) {
-    $ADMIN->add('appearance', new admin_externalpage('toolelementlibrary', get_string('pluginname', 'tool_elementlibrary'), $CFG->wwwroot.'/'.$CFG->admin.'/tool/elementlibrary/index.php', 'moodle/site:config'));
+    $ADMIN->add('appearance', new admin_externalpage('toolthemetester', get_string('pluginname', 'tool_themetester'), $CFG->wwwroot.'/'.$CFG->admin.'/tool/themetester/index.php', 'moodle/site:config'));
 }

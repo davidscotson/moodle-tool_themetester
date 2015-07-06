@@ -4,7 +4,7 @@ require_once(dirname(__FILE__) . '/../../../config.php');
 require_once($CFG->libdir . '/adminlib.php');
 
 $strheading = 'Element Library: Forms';
-$url = new moodle_url('/admin/tool/elementlibrary/forms.php');
+$url = new moodle_url('/admin/tool/themetester/forms.php');
 
 // Start setting up the page
 $params = array();
@@ -14,7 +14,7 @@ $PAGE->set_url($url);
 $PAGE->set_title($strheading);
 $PAGE->set_heading($strheading);
 
-admin_externalpage_setup('toolelementlibrary');
+admin_externalpage_setup('toolthemetester');
 echo $OUTPUT->header();
 
 echo html_writer::link(new moodle_url('index.php'), '&laquo; Back to index');
@@ -109,11 +109,11 @@ echo $OUTPUT->render($select);
 echo html_writer::tag('p', 'A url select form. Typically used for navigation.');
 
 $urls = array(
-    '/admin/tool/elementlibrary/' => 'Index',
-    '/admin/tool/elementlibrary/common.php' => 'Common elements',
-    '/admin/tool/elementlibrary/mform.php' => 'Moodle form elements',
-    '/admin/tool/elementlibrary/tables.php' => 'Tables',
-    '/admin/tool/elementlibrary/tabs.php' => 'Tabs',
+    '/admin/tool/themetester/' => 'Index',
+    '/admin/tool/themetester/common.php' => 'Common elements',
+    '/admin/tool/themetester/mform.php' => 'Moodle form elements',
+    '/admin/tool/themetester/tables.php' => 'Tables',
+    '/admin/tool/themetester/tabs.php' => 'Tabs',
 );
 
 echo $OUTPUT->url_select($urls, '', array('' => 'choose'), 'formid');

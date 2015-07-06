@@ -5,7 +5,7 @@ require_once($CFG->libdir . '/adminlib.php');
 require_once($CFG->dirroot.'/lib/formslib.php');
 
 $strheading = 'Element Library: Moodle Forms: Standard elements';
-$url = new moodle_url('/admin/tool/elementlibrary/mform_standard.php');
+$url = new moodle_url('/admin/tool/themetester/mform_standard.php');
 
 // Start setting up the page
 $params = array();
@@ -14,7 +14,7 @@ $PAGE->set_url($url);
 $PAGE->set_title($strheading);
 $PAGE->set_heading($strheading);
 
-admin_externalpage_setup('toolelementlibrary');
+admin_externalpage_setup('toolthemetester');
 echo $OUTPUT->header();
 
 echo html_writer::link(new moodle_url('mform.php'), '&laquo; Back to moodle forms');
@@ -120,7 +120,7 @@ class standard_form_elements extends moodleform {
         $mform->addElement('selectyesno', 'selectyesnofield', 'Yes/No select');
         $mform->disabledIf('selectyesnofield', 'disableelements', 'checked');
 
-        $mform->addElement('selectwithlink', 'selectwithlinkfield', 'Select with link', array(1 => 'One', 2 => 'Two', 3 => 'Three'), null, array('link' => $CFG->wwwroot.'/admin/tool/elementlibrary/', 'label' => 'A label'));
+        $mform->addElement('selectwithlink', 'selectwithlinkfield', 'Select with link', array(1 => 'One', 2 => 'Two', 3 => 'Three'), null, array('link' => $CFG->wwwroot.'/admin/tool/themetester/', 'label' => 'A label'));
         $mform->disabledIf('selectwithlinkfield', 'disableelements', 'checked');
 
         $mform->addElement('searchableselector', 'searchableselectorfield', 'Searchable selector', get_string_manager()->get_list_of_countries(true));

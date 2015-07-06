@@ -4,14 +4,14 @@ require_once(dirname(__FILE__) . '/../../../config.php');
 require_once($CFG->libdir . '/adminlib.php');
 
 $strheading = 'Element Library: Bootswatch 3 CSS';
-$url = new moodle_url('/admin/tool/elementlibrary/bootswatch.php');
+$url = new moodle_url('/admin/tool/themetester/bootswatch.php');
 
 // Start setting up the page
 $PAGE->set_context(context_system::instance());
 $PAGE->set_url($url);
 $PAGE->set_title($strheading);
 $PAGE->set_heading($strheading);
-admin_externalpage_setup('toolelementlibrary');
+admin_externalpage_setup('toolthemetester');
 
 echo $OUTPUT->header();
 

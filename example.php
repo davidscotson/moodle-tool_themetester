@@ -5,7 +5,7 @@ require_once($CFG->libdir . '/adminlib.php');
 require_once('lib.php');
 
 $strheading = 'Element Library: Example page';
-$url = new moodle_url('/admin/tool/elementlibrary/example.php');
+$url = new moodle_url('/admin/tool/themetester/example.php');
 
 
 // Start setting up the page
@@ -15,11 +15,11 @@ $PAGE->set_url($url);
 $PAGE->set_title($strheading);
 $PAGE->set_heading($strheading);
 
-$PAGE->requires->css('/admin/tool/elementlibrary/google-code-prettify/prettify.css');
-$PAGE->requires->js('/admin/tool/elementlibrary/google-code-prettify/prettify.js');
-$PAGE->requires->js_init_call('M.tool_elementlibrary.prettyprint');
+$PAGE->requires->css('/admin/tool/themetester/google-code-prettify/prettify.css');
+$PAGE->requires->js('/admin/tool/themetester/google-code-prettify/prettify.js');
+$PAGE->requires->js_init_call('M.tool_themetester.prettyprint');
 
-admin_externalpage_setup('toolelementlibrary');
+admin_externalpage_setup('toolthemetester');
 echo $OUTPUT->header();
 
 echo html_writer::link(new moodle_url('index.php'), '&laquo; Back to index');

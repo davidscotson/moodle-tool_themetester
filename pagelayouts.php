@@ -92,7 +92,7 @@ if ($layout) {
 
 // Start setting up the page
 $PAGE->set_context(context_system::instance());
-$url = new moodle_url('/admin/tool/elementlibrary/pagelayouts.php', array('layout' => $layout));
+$url = new moodle_url('/admin/tool/themetester/pagelayouts.php', array('layout' => $layout));
 $PAGE->set_url($url);
 $PAGE->set_title($strheading);
 $PAGE->set_heading($strheading);
@@ -100,14 +100,14 @@ if ($layout) {
     $PAGE->set_pagelayout($layout);
 }
 
-admin_externalpage_setup('toolelementlibrary');
+admin_externalpage_setup('toolthemetester');
 
 echo $OUTPUT->header();
 
 if ($layout) {
-    echo html_writer::link(new moodle_url('/admin/tool/elementlibrary/pagelayouts.php'), '&laquo; Back to layouts');
+    echo html_writer::link(new moodle_url('/admin/tool/themetester/pagelayouts.php'), '&laquo; Back to layouts');
 } else {
-    echo html_writer::link(new moodle_url('/admin/tool/elementlibrary/'), '&laquo; Back to index');
+    echo html_writer::link(new moodle_url('/admin/tool/themetester/'), '&laquo; Back to index');
 }
 echo $OUTPUT->heading($strheading);
 
@@ -121,7 +121,7 @@ if ($layout) {
     echo $OUTPUT->container('The links below take you to pages using each of the page layouts that can be defined in the theme.');
     $list = array();
     foreach ($layouts as $name => $info) {
-        $url = new moodle_url('/admin/tool/elementlibrary/pagelayouts.php', array('layout' => $name));
+        $url = new moodle_url('/admin/tool/themetester/pagelayouts.php', array('layout' => $name));
         $text = $info['name'];
         if ($name != 'popup') {
             $list[] = html_writer::link($url, $text);

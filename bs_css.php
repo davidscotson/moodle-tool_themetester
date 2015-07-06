@@ -4,7 +4,7 @@ require_once(dirname(__FILE__) . '/../../../config.php');
 require_once($CFG->libdir . '/adminlib.php');
 
 $strheading = 'Element Library: Bootstrap 3 CSS';
-$url = new moodle_url('/admin/tool/elementlibrary/bs_css.php');
+$url = new moodle_url('/admin/tool/themetester/bs_css.php');
 
 // Start setting up the page
 $params = array();
@@ -12,8 +12,8 @@ $PAGE->set_context(context_system::instance());
 $PAGE->set_url($url);
 $PAGE->set_title($strheading);
 $PAGE->set_heading($strheading);
-$PAGE->requires->css('/admin/tool/elementlibrary/bs_docs.min.css');
-admin_externalpage_setup('toolelementlibrary');
+$PAGE->requires->css('/admin/tool/themetester/bs_docs.min.css');
+admin_externalpage_setup('toolthemetester');
 
 echo $OUTPUT->header();
 

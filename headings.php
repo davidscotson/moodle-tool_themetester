@@ -5,7 +5,7 @@ require_once($CFG->libdir . '/adminlib.php');
 require_once('lib.php');
 
 $strheading = 'Element Library: Headings';
-$url = new moodle_url('/admin/tool/elementlibrary/headings.php');
+$url = new moodle_url('/admin/tool/themetester/headings.php');
 
 // Start setting up the page
 $params = array();
@@ -14,7 +14,7 @@ $PAGE->set_url($url);
 $PAGE->set_title($strheading);
 $PAGE->set_heading($strheading);
 
-admin_externalpage_setup('toolelementlibrary');
+admin_externalpage_setup('toolthemetester');
 echo $OUTPUT->header();
 
 echo html_writer::link(new moodle_url('index.php'), '&laquo; Back to index');
