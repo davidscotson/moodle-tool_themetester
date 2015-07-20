@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2012102800; // The current plugin version (Date: YYYYMMDDXX)
-$plugin->requires  = 2012092000; // Requires this Moodle version
-$plugin->component = 'tool_themetester'; // Full name of the plugin (used for diagnostics)
+$plugin->version   = 2015070100; // The current plugin version (Date: YYYYMMDDXX).
+$plugin->requires  = 2014111000; // Requires this Moodle version.
+$plugin->component = 'tool_themetester'; // Full name of the plugin (used for diagnostics).
 
-$plugin->maturity  = MATURITY_ALPHA; // this version's maturity level
+$plugin->maturity  = MATURITY_STABLE; // This version's maturity level.

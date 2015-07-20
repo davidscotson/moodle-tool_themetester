@@ -1,12 +1,34 @@
 <?php
+// This file is part of Moodle - http://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+
+/**
+ * Theme tester tool
+ *
+ * @package   tool_themetester
+ * @copyright  2012 Simon Coggins
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 
 require_once(dirname(__FILE__) . '/../../../config.php');
 require_once($CFG->libdir . '/adminlib.php');
 
-$strheading = 'Element Library: Common tags';
+$strheading = 'Theme Tester: Common tags';
 $url = new moodle_url('/admin/tool/themetester/common.php');
 
-// Start setting up the page
+// Start setting up the page.
 $params = array();
 $PAGE->set_context(context_system::instance());
 $PAGE->set_url($url);
@@ -25,8 +47,7 @@ echo $OUTPUT->container('Examples of common HTML tags');
 echo $OUTPUT->container_start();
 echo $OUTPUT->heading('Inline elements', 3);
 echo html_writer::start_tag('p');
-// list of inline elements from:
-// http://htmlhelp.com/reference/html40/inline.html
+// List of inline elements from http://htmlhelp.com/reference/html40/inline.html
 echo ' Lorum Ipsum ';
 $params = array('t' => time()); // to prevent the link being visited
 echo html_writer::link(new moodle_url('index.php', $params), 'an unvisited text link');
@@ -87,7 +108,7 @@ echo $OUTPUT->container_end();
 
 echo $OUTPUT->container_start();
 echo $OUTPUT->heading('Block level elements', 3);
-// from http://htmlhelp.com/reference/html40/block.html
+// From http://htmlhelp.com/reference/html40/block.html
 
 echo $OUTPUT->heading('Address text', 4);
 echo html_writer::tag('address', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu accumsan nulla. Cras elementum tincidunt dictum. Phasellus varius, est non ornare mattis, leo velit congue libero, vitae suscipit ipsum urna sed orci. Pellentesque venenatis pulvinar lobortis. Vestibulum iaculis commodo eros quis volutpat. Morbi vitae dapibus ante. Nullam convallis interdum ipsum, venenatis consequat eros faucibus sed. Pellentesque non tellus vel eros ullamcorper sollicitudin ut in lectus. Sed aliquet gravida porta.');
