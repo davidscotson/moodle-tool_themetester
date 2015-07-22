@@ -23,5 +23,3 @@
  */
 
 $string['pluginname'] = 'Theme tester';
-
-?>

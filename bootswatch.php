@@ -1183,5 +1183,5 @@ echo $OUTPUT->heading($strheading);
       </div>
     </div>
 <?php
-// TODO add JS from original site to make the examples work.
+// TODO add JS from original site to make the Modal and Popup examples work.
 echo $OUTPUT->footer();
