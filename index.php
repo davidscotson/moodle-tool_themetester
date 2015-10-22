@@ -58,6 +58,7 @@ $contents = array(
     'Paging bar' => 'paging.php',
     'Images' => 'images.php',
     'Notifications' => 'notifications.php',
+    'Confirmation' => 'confirm.php',
     'Progress Bars' => 'progress.php',
     'Page Layouts' => 'pagelayouts.php',
     'Bootstrap CSS' => 'bs_css.php',

@@ -24,7 +24,6 @@
 
 require_once(dirname(__FILE__) . '/../../../config.php');
 require_once($CFG->libdir . '/adminlib.php');
-require_once('lib.php');
 
 $strheading = 'Theme Tester: Headings';
 $url = new moodle_url('/admin/tool/themetester/headings.php');
