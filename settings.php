@@ -15,15 +15,20 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Element library settings
+ * Links and settings
+ *
+ * This file contains links and settings used by tool_themetester
  *
  * @package    tool_themetester
- * @copyright  2012 Simon Coggins
+ * @copyright  Copyright (c) 2015 Moodlerooms Inc. (http://www.moodlerooms.com)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-
 defined('MOODLE_INTERNAL') || die;
 
-if ($hassiteconfig) {
-    $ADMIN->add('appearance', new admin_externalpage('toolthemetester', get_string('pluginname', 'tool_themetester'), $CFG->wwwroot.'/'.$CFG->admin.'/tool/themetester/index.php', 'moodle/site:config'));
-}
+// Theme tester page.
+$temp = new admin_externalpage(
+    'toolthemetester',
+    get_string('pluginname', 'tool_themetester'),
+    new moodle_url('/admin/tool/themetester/index.php')
+);
+$ADMIN->add('development', $temp);

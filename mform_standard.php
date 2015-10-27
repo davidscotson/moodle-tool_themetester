@@ -122,15 +122,6 @@ class standard_form_elements extends moodleform {
         $select->setMultiple(true);
         $mform->disabledIf('multiselectfield', 'disableelements', 'checked');
 
-        // to disable individual options, build the select manually:
-        $select2 = HTML_QuickForm::createElement('select', 'selectwithdisabledoptionsfield', 'Select with disabled options');
-        $select2->addOption( 'An active option', '');
-        $select2->addOption( 'A disabled option', '', array('disabled' => 'disabled'));
-        $select2->addOption( 'Another active option', '');
-        $select2->addOption( 'Another disabled option', '', array('disabled' => 'disabled'));
-        $mform->addElement($select2);
-        $mform->disabledIf('selectwithdisabledoptionsfield', 'disableelements', 'checked');
-
         $groupselectoptions = array(
             'group one' => array(1 => 'one', 2 => 'two', 3 => 'three'),
             'group two' => array(1 => 'one', 2 => 'two', 3 => 'three'),
@@ -158,6 +149,7 @@ class standard_form_elements extends moodleform {
 
         // no 'size' attribute, use CSS definitions
         $mform->addElement('text', 'textfield', 'Text field');
+        $mform->setType('textfield', PARAM_NOTAGS);
         $mform->setDefault('textfield', 'Default text');
         $mform->disabledIf('textfield', 'disableelements', 'checked');
 
@@ -171,6 +163,7 @@ class standard_form_elements extends moodleform {
 
         $mform->addElement('static', 'datedes', '', 'Don\'t forget to style the popup dialog');
         $mform->addElement('url', 'urlfield', 'URL');
+        $mform->setType('urlfield', PARAM_NOTAGS);
         $mform->disabledIf('urlfield', 'disableelements', 'checked');
 
         $mform->addElement('header', null, 'Another Header element');
@@ -180,7 +173,7 @@ class standard_form_elements extends moodleform {
         $this->add_action_buttons(true, 'Submit button');
     }
 
-    function validation($formelements) {
+    function validation($formelements, $files) {
         $err = array();
         foreach ($formelements as $name => $value) {
             $err[$name] = 'Custom validation message for ' . $name;
