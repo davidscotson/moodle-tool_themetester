@@ -45,11 +45,11 @@ echo $OUTPUT->heading($strheading);
 
 echo $OUTPUT->notification('This is an error notification <a href="#">with a link</a>');
 
-echo $OUTPUT->notification('This is a success notification <a href="#">with a link</a>', 'notifysuccess');
+echo $OUTPUT->notification('This is a success notification <a href="#">with a link</a>', 'success');
 
-echo $OUTPUT->notification('This is a standard notification <a href="#">with a link</a>', 'notifymessage');
+echo $OUTPUT->notification('This is a standard notification <a href="#">with a link</a>', 'info');
 
-echo $OUTPUT->notification('This is a redirect message notification. It looks like it\'s supposed to be used on a blank page as it has 10% top margin', 'redirectmessage');
+echo $OUTPUT->notification('This is a redirect message notification. It looks like it\'s supposed to be used on a blank page as it has 10% top margin', 'info');
 
 echo $OUTPUT->error_text('This is an error generated using error_text(). I think this is used in form validation errors.');
 
