@@ -28,7 +28,6 @@ require_once($CFG->libdir . '/adminlib.php');
 $strheading = 'Theme Tester: Notifications';
 $url = new moodle_url('/admin/tool/themetester/notifications.php');
 
-// Start setting up the page
 $params = array();
 $PAGE->set_context(context_system::instance());
 $PAGE->set_url($url);
@@ -45,14 +44,12 @@ echo $OUTPUT->heading($strheading);
 
 echo $OUTPUT->notification('This is an error notification <a href="#">with a link</a>');
 
+echo $OUTPUT->notification('This is a warning notification <a href="#">with a link</a>', 'warning');
+
 echo $OUTPUT->notification('This is a success notification <a href="#">with a link</a>', 'success');
 
-echo $OUTPUT->notification('This is a standard notification <a href="#">with a link</a>', 'info');
-
-echo $OUTPUT->notification('This is a redirect message notification. It looks like it\'s supposed to be used on a blank page as it has 10% top margin', 'info');
+echo $OUTPUT->notification('This is a info notification <a href="#">with a link</a>', 'info');
 
 echo $OUTPUT->error_text('This is an error generated using error_text(). I think this is used in form validation errors.');
-
-echo $OUTPUT->box('This is a notice box <a href="#">with a link</a>, generated via box() with "generalbox" and "notice" classes added. Used by moodle in various places.', array('generalbox', 'notice'));
 
 echo $OUTPUT->footer();
