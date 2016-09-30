@@ -48,7 +48,7 @@ echo $OUTPUT->notification('This is a warning notification <a href="#">with a li
 
 echo $OUTPUT->notification('This is a success notification <a href="#">with a link</a>', 'success');
 
-echo $OUTPUT->notification('This is a info notification <a href="#">with a link</a>', 'info');
+echo $OUTPUT->notification('This is an info notification <a href="#">with a link</a>', 'info');
 
 echo $OUTPUT->error_text('This is an error generated using error_text(). I think this is used in form validation errors.');
 
