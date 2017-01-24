@@ -30,6 +30,7 @@ Feature: The renderers are used in the theme tester, and don't throw warning or 
   Scenario: No warnings thrown from renderers
     Given I am on site homepage
     And I navigate to "Theme tester" node in "Site administration > Development"
+    And I close flat navigation drawer
     And I follow "Headings"
     And I should see "H1 Heading"
     And I should see "H2 Heading"
