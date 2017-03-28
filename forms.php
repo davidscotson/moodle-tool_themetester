@@ -147,14 +147,6 @@ $options = new stdClass();
 echo $OUTPUT->file_picker($options);
  */
 
-// get any cmid to make this work
-$cmid = $DB->get_field('course_modules', 'id', array(), IGNORE_MULTIPLE);
-$modulename = $DB->get_field('modules', 'name', array(), IGNORE_MULTIPLE);
-if ($cmid) {
-    echo html_writer::tag('p', 'An "update module" button. The module name is the value from the modules table e.g. "workshop". The button won\'t be shown if the user doesn\'t have the capability to manage that activity.');
-    echo $OUTPUT->update_module_button($cmid, $modulename);
-}
-
 echo html_writer::tag('p', 'An "editing on/off" button. This automatically sends through the appropriate "edit" param and toggles the text.');
 $url = new moodle_url('forms.php', array('params' => 'to', 'send' => 'through'));
 echo $OUTPUT->edit_button($url);
