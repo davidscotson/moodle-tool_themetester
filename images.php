@@ -45,10 +45,10 @@ echo $OUTPUT->box_start();
 
 echo $OUTPUT->container_start();
 
-echo html_writer::tag('p', 'You can build images manually using pix_url() to get the image path, but you have to specify all the info manually (including width, height and alt attributes):');
+echo html_writer::tag('p', 'You can build images manually using image_url() to get the image path, but you have to specify all the info manually (including width, height and alt attributes):');
 
 $attr = array(
-    'src' => $OUTPUT->pix_url('moodlelogo'),
+    'src' => $OUTPUT->image_url('moodlelogo'),
     'alt' => 'Moodle logo',
     'width' => 100,
     'height' => 30,
@@ -58,14 +58,14 @@ echo html_writer::empty_tag('img', $attr);
 echo html_writer::tag('p', 'If you are creating icons which use the standard (16x16px) or small (11x11px) icon sizes, then just set the CSS class instead to "icon" or "iconsmall".');
 
 $attr = array(
-    'src' => $OUTPUT->pix_url('i/risk_xss'),
+    'src' => $OUTPUT->image_url('i/risk_xss'),
     'alt' => 'XSS Risk',
     'class' => 'icon',
 );
 echo '16x16 icon: ' . html_writer::empty_tag('img', $attr);
 
 $attr = array(
-    'src' => $OUTPUT->pix_url('t/delete'),
+    'src' => $OUTPUT->image_url('t/delete'),
     'alt' => 'Delete',
     'class' => 'iconsmall',
 );
