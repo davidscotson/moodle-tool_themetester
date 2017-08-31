@@ -22,12 +22,13 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+define('NO_OUTPUT_BUFFERING', true);
+
 require_once(dirname(__FILE__) . '/../../../config.php');
 require_once($CFG->libdir . '/adminlib.php');
 
 $strheading = 'Theme Tester: Progress Bars';
 $url = new moodle_url('/admin/tool/themetester/progress.php');
-
 // Start setting up the page.
 $params = array();
 $PAGE->set_context(context_system::instance());
