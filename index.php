@@ -61,9 +61,7 @@ $contents = array(
     'Confirmation' => 'confirm.php',
     'Progress Bars' => 'progress.php',
     'Page Layouts' => 'pagelayouts.php',
-    'Bootstrap CSS' => 'bs_css.php',
-    'Bootstrap Components' => 'bs_components.php',
-    'Bootstrap Javascript' => 'bs_javascript.php',
+    'Bootstrap 4 docs' => 'docs/4.0/index.php',
     'Bootswatch Examples' => 'bootswatch.php',
 );
 
