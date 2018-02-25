@@ -25,32 +25,28 @@
 require_once(dirname(__FILE__) . '/../../../../../../../config.php');
 require_once($CFG->libdir . '/adminlib.php');
 
-$strheading = 'Theme Tester: Bootstrap 4 CSS';
-$url = new moodle_url('/admin/tool/themetester/bs_css.php');
+$strheading = 'Theme Tester: Bootstrap 4 CSS : Progress';
+$url = new moodle_url('/admin/tool/themetester/bootswatch4.php');
 
 // Start setting up the page.
 $params = array();
 $PAGE->set_context(context_system::instance());
 $PAGE->set_url($url);
 $PAGE->set_title($strheading);
-$PAGE->set_heading($strheading);
-$PAGE->requires->css('/admin/tool/themetester/bs_docs.min.css');
+$PAGE->set_heading("Progress");
+$PAGE->requires->jquery();
+
+$PAGE->requires->css('/admin/tool/themetester/docsearch.min.css');
+
+$PAGE->requires->css('/admin/tool/themetester/assets/css/docs.min.css');
 admin_externalpage_setup('toolthemetester');
 
 echo $OUTPUT->header();
 
-echo html_writer::link(new moodle_url('index.php'), '&laquo; Back to index');
+echo html_writer::link(new moodle_url('/admin/tool/themetester/index.php'), '&laquo; Back to index');
 echo $OUTPUT->heading($strheading);
 
 ?>
-
-<title>Progress · Bootstrap</title>
-
-<!-- Documentation extras -->
-
-<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet">
-
-<link href="/admin/tool/themetester/assets/css/docs.min.css" rel="stylesheet">
 
 <!-- Favicons -->
 <link rel="apple-touch-icon" href="/admin/tool/themetester/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -545,10 +541,7 @@ echo $OUTPUT->heading($strheading);
       </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="/admin/tool/themetester/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-
-<script src="/admin/tool/themetester/assets/js/vendor/popper.min.js"></script><script src="/admin/tool/themetester/dist/js/bootstrap.js"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script><script src="/admin/tool/themetester/assets/js/vendor/anchor.min.js"></script>
+    <script src="/admin/tool/themetester/assets/js/vendor/popper.min.js"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script><script src="/admin/tool/themetester/assets/js/vendor/anchor.min.js"></script>
   <script src="/admin/tool/themetester/assets/js/vendor/clipboard.min.js"></script>
   <script src="/admin/tool/themetester/assets/js/vendor/holder.min.js"></script>
   <script src="/admin/tool/themetester/assets/js/src/application.js"></script>

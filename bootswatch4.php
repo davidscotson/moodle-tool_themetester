@@ -25,7 +25,7 @@
 require_once(dirname(__FILE__) . '/../../../config.php');
 require_once($CFG->libdir . '/adminlib.php');
 
-$strheading = 'Theme Tester: Bootswatch 4 CSS';
+$strheading = 'Theme Tester: Bootswatch 4 beta 2 CSS';
 $url = new moodle_url('/admin/tool/themetester/bootswatch.php');
 
 // Start setting up the page.
@@ -39,41 +39,10 @@ echo $OUTPUT->header();
 
 echo html_writer::link(new moodle_url('index.php'), '&laquo; Back to index');
 echo $OUTPUT->heading($strheading);
-/*
-    TODO add a link to Bootswatch and Bas's themes with text like the following:
-    Bootswatch is a collection of "themes" for the Bootstrap ecosystem, which helps to demonstrate the varity of visual effects possible when building on the
-    core HTML elements. Bas Brands hase been producing Moodle themes built on this framework.
-    * */
 ?>
-    <div class="container">
 
-      <div class="page-header" id="banner">
-        <div class="row">
-          <div class="col-lg-8 col-md-7 col-sm-6">
-            <h1>Litera</h1>
-            <p class="lead">The medium is the message</p>
-          </div>
-          <div class="col-lg-4 col-md-5 col-sm-6">
-            <div class="sponsor"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-3 col-md-3 col-sm-4">
-            <div class="list-group table-of-contents">
-              <a class="list-group-item list-group-item-action" href="#navbars">Navbars</a>
-              <a class="list-group-item list-group-item-action" href="#buttons">Buttons</a>
-              <a class="list-group-item list-group-item-action" href="#typography">Typography</a>
-              <a class="list-group-item list-group-item-action" href="#tables">Tables</a>
-              <a class="list-group-item list-group-item-action" href="#forms">Forms</a>
-              <a class="list-group-item list-group-item-action" href="#navs">Navs</a>
-              <a class="list-group-item list-group-item-action" href="#indicators">Indicators</a>
-              <a class="list-group-item list-group-item-action" href="#progress">Progress</a>
-              <a class="list-group-item list-group-item-action" href="#containers">Containers</a>
-              <a class="list-group-item list-group-item-action" href="#dialogs">Dialogs</a>
-            </div>
-          </div>
-        </div>
-      </div>
+
+    <div class="container">
 
       <!-- Navbar
       ================================================== -->
@@ -85,11 +54,11 @@ echo $OUTPUT->heading($strheading);
             </div>
 
             <div class="bs-component">
-              <nav class="navbar navbar-toggleable-md navbar-light bg-primary">
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+              <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
                 <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
 
                 <div class="collapse navbar-collapse" id="navbarColor01">
                   <ul class="navbar-nav mr-auto">
@@ -106,7 +75,7 @@ echo $OUTPUT->heading($strheading);
                       <a class="nav-link" href="#">About</a>
                     </li>
                   </ul>
-                  <form class="form-inline">
+                  <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="text" placeholder="Search">
                     <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
                   </form>
@@ -115,13 +84,13 @@ echo $OUTPUT->heading($strheading);
             </div>
 
             <div class="bs-component">
-              <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+              <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
 
-                <div class="collapse navbar-collapse" id="navbarColor01">
+                <div class="collapse navbar-collapse" id="navbarColor02">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                       <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -136,7 +105,37 @@ echo $OUTPUT->heading($strheading);
                       <a class="nav-link" href="#">About</a>
                     </li>
                   </ul>
-                  <form class="form-inline">
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
+            </div>
+
+            <div class="bs-component">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarColor03">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="text" placeholder="Search">
                     <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
                   </form>
@@ -252,29 +251,29 @@ echo $OUTPUT->heading($strheading);
             </p>
 
             <div class="bs-component" style="margin-bottom: 15px;">
-              <div class="btn-group" data-toggle="buttons">
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
                 <label class="btn btn-primary active">
-                  <input type="checkbox" checked> Checkbox 1
+                  <input type="checkbox" checked autocomplete="off"> Active
                 </label>
                 <label class="btn btn-primary">
-                  <input type="checkbox"> Checkbox 2
+                  <input type="checkbox" autocomplete="off"> Check
                 </label>
                 <label class="btn btn-primary">
-                  <input type="checkbox"> Checkbox 3
+                  <input type="checkbox" autocomplete="off"> Check
                 </label>
               </div>
             </div>
 
             <div class="bs-component" style="margin-bottom: 15px;">
-              <div class="btn-group" data-toggle="buttons">
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
                 <label class="btn btn-primary active">
-                  <input type="radio" name="options" id="option1" checked> Radio 1
+                  <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
                 </label>
                 <label class="btn btn-primary">
-                  <input type="radio" name="options" id="option2"> Radio 2
+                  <input type="radio" name="options" id="option2" autocomplete="off"> Radio
                 </label>
                 <label class="btn btn-primary">
-                  <input type="radio" name="options" id="option3"> Radio 3
+                  <input type="radio" name="options" id="option3" autocomplete="off"> Radio
                 </label>
               </div>
             </div>
@@ -300,13 +299,13 @@ echo $OUTPUT->heading($strheading);
 
             <div class="bs-component" style="margin-bottom: 15px;">
               <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                <div class="btn-group" role="group" aria-label="First group">
+                <div class="btn-group mr-2" role="group" aria-label="First group">
                   <button type="button" class="btn btn-secondary">1</button>
                   <button type="button" class="btn btn-secondary">2</button>
                   <button type="button" class="btn btn-secondary">3</button>
                   <button type="button" class="btn btn-secondary">4</button>
                 </div>
-                <div class="btn-group" role="group" aria-label="Second group">
+                <div class="btn-group mr-2" role="group" aria-label="Second group">
                   <button type="button" class="btn btn-secondary">5</button>
                   <button type="button" class="btn btn-secondary">6</button>
                   <button type="button" class="btn btn-secondary">7</button>
@@ -383,18 +382,26 @@ echo $OUTPUT->heading($strheading);
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-4">
             <div class="bs-component">
               <blockquote class="blockquote">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                 <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
               </blockquote>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-4">
             <div class="bs-component">
-              <blockquote class="blockquote blockquote-reverse">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <blockquote class="blockquote text-center">
+                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+              </blockquote>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="bs-component">
+              <blockquote class="blockquote text-right">
+                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                 <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
               </blockquote>
             </div>
@@ -413,54 +420,72 @@ echo $OUTPUT->heading($strheading);
             </div>
 
             <div class="bs-component">
-              <table class="table table-striped table-hover table-bordered">
-                <thead class="thead-inverse">
+              <table class="table table-hover">
+                <thead>
                   <tr>
-                    <th>#</th>
-                    <th>Column heading</th>
-                    <th>Column heading</th>
-                    <th>Column heading</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Column heading</th>
+                    <th scope="col">Column heading</th>
+                    <th scope="col">Column heading</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>1</td>
+                  <tr class="table-active">
+                    <th scope="row">Active</th>
                     <td>Column content</td>
                     <td>Column content</td>
                     <td>Column content</td>
                   </tr>
                   <tr>
-                    <td>2</td>
+                    <th scope="row">Default</th>
                     <td>Column content</td>
                     <td>Column content</td>
                     <td>Column content</td>
                   </tr>
-                  <tr class="table-info">
-                    <td>3</td>
+                  <tr class="table-primary">
+                    <th scope="row">Primary</th>
+                    <td>Column content</td>
+                    <td>Column content</td>
+                    <td>Column content</td>
+                  </tr>
+                  <tr class="table-secondary">
+                    <th scope="row">Secondary</th>
                     <td>Column content</td>
                     <td>Column content</td>
                     <td>Column content</td>
                   </tr>
                   <tr class="table-success">
-                    <td>4</td>
+                    <th scope="row">Success</th>
                     <td>Column content</td>
                     <td>Column content</td>
                     <td>Column content</td>
                   </tr>
                   <tr class="table-danger">
-                    <td>5</td>
+                    <th scope="row">Danger</th>
                     <td>Column content</td>
                     <td>Column content</td>
                     <td>Column content</td>
                   </tr>
                   <tr class="table-warning">
-                    <td>6</td>
+                    <th scope="row">Warning</th>
                     <td>Column content</td>
                     <td>Column content</td>
                     <td>Column content</td>
                   </tr>
-                  <tr class="table-active">
-                    <td>7</td>
+                  <tr class="table-info">
+                    <th scope="row">Info</th>
+                    <td>Column content</td>
+                    <td>Column content</td>
+                    <td>Column content</td>
+                  </tr>
+                  <tr class="table-light">
+                    <th scope="row">Light</th>
+                    <td>Column content</td>
+                    <td>Column content</td>
+                    <td>Column content</td>
+                  </tr>
+                  <tr class="table-dark">
+                    <th scope="row">Dark</th>
                     <td>Column content</td>
                     <td>Column content</td>
                     <td>Column content</td>
@@ -489,6 +514,12 @@ echo $OUTPUT->heading($strheading);
               <form>
                 <fieldset>
                   <legend>Legend</legend>
+                  <div class="form-group row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                    </div>
+                  </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
@@ -548,80 +579,129 @@ echo $OUTPUT->heading($strheading);
                       </label>
                     </div>
                   </fieldset>
-                  <div class="form-check">
-                    <label class="form-check-label">
-                      <input type="checkbox" class="form-check-input">
-                      Check me out
-                    </label>
-                  </div>
+                  <fieldset class="form-group">
+                    <legend>Checkboxes</legend>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="" checked>
+                        Option one is this and that&mdash;be sure to include why it's great
+                      </label>
+                    </div>
+                    <div class="form-check disabled">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="" disabled>
+                        Option two is disabled
+                      </label>
+                    </div>
+                  </fieldset>
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </fieldset>
               </form>
             </div>
           </div>
-          <div class="col-lg-4 col-lg-offset-1">
+          <div class="col-lg-4 offset-lg-1">
 
-              <form class="bs-component">
+            <form class="bs-component">
+              <div class="form-group">
+                <fieldset disabled>
+                  <label class="control-label" for="disabledInput">Disabled input</label>
+                  <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled="">
+                </fieldset>
+              </div>
 
+              <div class="form-group">
+                <fieldset>
+                  <label class="control-label" for="readOnlyInput">Readonly input</label>
+                  <input class="form-control" id="readOnlyInput" type="text" placeholder="Readonly input here…" readonly>
+                </fieldset>
+              </div>
+
+              <div class="form-group has-success">
+                <label class="form-control-label" for="inputSuccess1">Valid input</label>
+                <input type="text" value="correct value" class="form-control is-valid" id="inputValid">
+                <div class="valid-feedback">Success! You've done it.</div>
+              </div>
+
+              <div class="form-group has-danger">
+                <label class="form-control-label" for="inputDanger1">Invalid input</label>
+                <input type="text" value="wrong value" class="form-control is-invalid" id="inputInvalid">
+                <div class="invalid-feedback">Sorry, that username's taken. Try another?</div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-form-label col-form-label-lg" for="inputLarge">Large input</label>
+                <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" id="inputLarge">
+              </div>
+
+              <div class="form-group">
+                <label class="col-form-label" for="inputDefault">Default input</label>
+                <input type="text" class="form-control" placeholder="Default input" id="inputDefault">
+              </div>
+
+              <div class="form-group">
+                <label class="col-form-label col-form-label-sm" for="inputSmall">Small input</label>
+                <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" id="inputSmall">
+              </div>
+
+              <div class="form-group">
+                <label class="control-label">Input addons</label>
                 <div class="form-group">
-                  <fieldset disabled>
-                    <label class="control-label" for="disabledInput">Disabled input</label>
-                    <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled="">
-                  </fieldset>
-                </div>
-
-                <div class="form-group">
-                  <fieldset>
-                    <label class="control-label" for="readOnlyInput">Readonly input</label>
-                    <input class="form-control" id="readOnlyInput" type="text" placeholder="Readonly input here…" readonly>
-                  </fieldset>
-                </div>
-
-                <div class="form-group has-success">
-                  <label class="form-control-label" for="inputSuccess1">Input with success</label>
-                  <input type="text" class="form-control form-control-success" id="inputSuccess1">
-                  <div class="form-control-feedback">Success! You've done it.</div>
-                </div>
-
-                <div class="form-group has-warning">
-                  <label class="form-control-label" for="inputWarning1">Input with warning</label>
-                  <input type="text" class="form-control form-control-warning" id="inputWarning1">
-                  <div class="form-control-feedback">Shucks, try again.</div>
-                </div>
-
-                <div class="form-group has-danger">
-                  <label class="form-control-label" for="inputDanger1">Input with danger</label>
-                  <input type="text" class="form-control form-control-danger" id="inputDanger1">
-                  <div class="form-control-feedback">Sorry, that username's taken. Try another?</div>
-                </div>
-
-                <div class="form-group">
-                  <label class="col-form-label col-form-label-lg" for="inputLarge">Large input</label>
-                  <input class="form-control form-control-lg" type="text" id="inputLarge">
-                </div>
-
-                <div class="form-group">
-                  <label class="col-form-label" for="inputDefault">Default input</label>
-                  <input type="text" class="form-control" id="inputDefault">
-                </div>
-
-                <div class="form-group">
-                  <label class="col-form-label col-form-label-sm" for="inputSmall">Small input</label>
-                  <input class="form-control form-control-sm" type="text" id="inputSmall">
-                </div>
-
-                <div class="form-group">
-                  <label class="control-label">Input addons</label>
-                  <div class="form-group">
-                    <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
-                    <div class="input-group">
-                      <div class="input-group-addon">$</div>
-                      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
-                      <div class="input-group-addon">.00</div>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">$</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <div class="input-group-append">
+                      <span class="input-group-text">.00</span>
                     </div>
                   </div>
                 </div>
-              </form>
+              </div>
+            </form>
+
+            <div class="bs-component">
+              <fieldset>
+                <legend>Custom forms</legend>
+                <div class="form-group">
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked>
+                    <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" disabled>
+                    <label class="custom-control-label" for="customRadio3">Disabled custom radio</label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+                    <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck2" disabled>
+                    <label class="custom-control-label" for="customCheck2">Disabled custom checkbox</label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <select class="custom-select">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="custom-file">
+                    <input type="file" id="file2" class="custom-file-input">
+                    <span class="custom-file-control"></span>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
 
           </div>
         </div>
@@ -665,7 +745,7 @@ echo $OUTPUT->heading($strheading);
                 </li>
               </ul>
               <div id="myTabContent" class="tab-content">
-                <div class="tab-pane fade active in" id="home">
+                <div class="tab-pane fade show active" id="home">
                   <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
                 </div>
                 <div class="tab-pane fade" id="profile">
@@ -708,7 +788,7 @@ echo $OUTPUT->heading($strheading);
             </div>
             <br>
             <div class="bs-component">
-              <ul class="nav nav-pills nav-stacked">
+              <ul class="nav nav-pills flex-column">
                 <li class="nav-item">
                   <a class="nav-link active" href="#">Active</a>
                 </li>
@@ -856,8 +936,8 @@ echo $OUTPUT->heading($strheading);
             <div class="bs-component">
               <div class="alert alert-dismissible alert-warning">
                 <button type="button" class="close" data-dismiss="alert">&times;</button>
-                <h4>Warning!</h4>
-                <p>Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, <a href="#" class="alert-link">vel scelerisque nisl consectetur et</a>.</p>
+                <h4 class="alert-heading">Warning!</h4>
+                <p class="mb-0">Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, <a href="#" class="alert-link">vel scelerisque nisl consectetur et</a>.</p>
               </div>
             </div>
           </div>
@@ -888,23 +968,53 @@ echo $OUTPUT->heading($strheading);
             </div>
           </div>
         </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="bs-component">
+              <div class="alert alert-dismissible alert-primary">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="bs-component">
+              <div class="alert alert-dismissible alert-secondary">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="bs-component">
+              <div class="alert alert-dismissible alert-light">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.
+              </div>
+            </div>
+          </div>
+        </div>
         <div>
           <h2>Badges</h2>
           <div class="bs-component" style="margin-bottom: 40px;">
-            <span class="badge badge-default">Default</span>
             <span class="badge badge-primary">Primary</span>
+            <span class="badge badge-secondary">Secondary</span>
             <span class="badge badge-success">Success</span>
-            <span class="badge badge-warning">Warning</span>
             <span class="badge badge-danger">Danger</span>
+            <span class="badge badge-warning">Warning</span>
             <span class="badge badge-info">Info</span>
+            <span class="badge badge-light">Light</span>
+            <span class="badge badge-dark">Dark</span>
           </div>
           <div class="bs-component">
-            <span class="badge badge-pill badge-default">Default</span>
             <span class="badge badge-pill badge-primary">Primary</span>
+            <span class="badge badge-pill badge-secondary">Secondary</span>
             <span class="badge badge-pill badge-success">Success</span>
-            <span class="badge badge-pill badge-warning">Warning</span>
             <span class="badge badge-pill badge-danger">Danger</span>
+            <span class="badge badge-pill badge-warning">Warning</span>
             <span class="badge badge-pill badge-info">Info</span>
+            <span class="badge badge-pill badge-light">Light</span>
+            <span class="badge badge-pill badge-dark">Dark</span>
           </div>
         </div>
       </div>
@@ -922,7 +1032,7 @@ echo $OUTPUT->heading($strheading);
             <h3 id="progress-basic">Basic</h3>
             <div class="bs-component">
               <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 25%; height: 20px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
@@ -991,9 +1101,13 @@ echo $OUTPUT->heading($strheading);
             </div>
             <div class="bs-component">
               <div class="jumbotron">
-                <h1 class="display-3">Jumbotron</h1>
-                <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                <p><a class="btn btn-primary btn-lg" href="#">Learn more</a></p>
+                <h1 class="display-3">Hello, world!</h1>
+                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                <hr class="my-4">
+                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                <p class="lead">
+                  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                </p>
               </div>
             </div>
           </div>
@@ -1010,17 +1124,17 @@ echo $OUTPUT->heading($strheading);
           <div class="col-lg-4">
             <div class="bs-component">
               <ul class="list-group">
-                <li class="list-group-item">
-                  <span class="tag tag-default tag-pill float-xs-right">14</span>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
                   Cras justo odio
+                  <span class="badge badge-primary badge-pill">14</span>
                 </li>
-                <li class="list-group-item">
-                  <span class="tag tag-default tag-pill float-xs-right">2</span>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
                   Dapibus ac facilisis in
+                  <span class="badge badge-primary badge-pill">2</span>
                 </li>
-                <li class="list-group-item">
-                  <span class="tag tag-default tag-pill float-xs-right">1</span>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
                   Morbi leo risus
+                  <span class="badge badge-primary badge-pill">1</span>
                 </li>
               </ul>
             </div>
@@ -1028,7 +1142,7 @@ echo $OUTPUT->heading($strheading);
           <div class="col-lg-4">
             <div class="bs-component">
               <div class="list-group">
-                <a href="#" class="list-group-item  list-group-item-action active">
+                <a href="#" class="list-group-item list-group-item-action active">
                   Cras justo odio
                 </a>
                 <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in
@@ -1041,13 +1155,21 @@ echo $OUTPUT->heading($strheading);
           <div class="col-lg-4">
             <div class="bs-component">
               <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action active">
-                  <h4 class="list-group-item-heading">List group item heading</h4>
-                  <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">List group item heading</h5>
+                    <small>3 days ago</small>
+                  </div>
+                  <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                  <small>Donec id elit non mi porta.</small>
                 </a>
-                <a href="#" class="list-group-item list-group-item-action">
-                  <h4 class="list-group-item-heading">List group item heading</h4>
-                  <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">List group item heading</h5>
+                    <small class="text-muted">3 days ago</small>
+                  </div>
+                  <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                  <small class="text-muted">Donec id elit non mi porta.</small>
                 </a>
               </div>
             </div>
@@ -1063,88 +1185,120 @@ echo $OUTPUT->heading($strheading);
         <div class="row">
           <div class="col-lg-4">
             <div class="bs-component">
-              <div class="card card-inverse card-primary text-xs-center">
-                <div class="card-block">
-                  <blockquote class="card-blockquote">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                  </blockquote>
+              <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h4 class="card-title">Primary card title</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
               </div>
-              <div class="card card-inverse card-success text-xs-center">
-                <div class="card-block">
-                  <blockquote class="card-blockquote">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                  </blockquote>
+              <div class="card text-white bg-secondary mb-3" style="max-width: 20rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h4 class="card-title">Secondary card title</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
               </div>
-              <div class="card card-inverse card-info text-xs-center">
-                <div class="card-block">
-                  <blockquote class="card-blockquote">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                  </blockquote>
+              <div class="card text-white bg-success mb-3" style="max-width: 20rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h4 class="card-title">Success card title</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
               </div>
-              <div class="card card-inverse card-warning text-xs-center">
-                <div class="card-block">
-                  <blockquote class="card-blockquote">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                  </blockquote>
+              <div class="card text-white bg-danger mb-3" style="max-width: 20rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h4 class="card-title">Danger card title</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
               </div>
-              <div class="card card-inverse card-danger text-xs-center">
-                <div class="card-block">
-                  <blockquote class="card-blockquote">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                  </blockquote>
+              <div class="card text-white bg-warning mb-3" style="max-width: 20rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h4 class="card-title">Warning card title</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              <div class="card text-white bg-info mb-3" style="max-width: 20rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h4 class="card-title">Info card title</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              <div class="card bg-light mb-3" style="max-width: 20rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h4 class="card-title">Light card title</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h4 class="card-title">Dark card title</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="bs-component">
-              <div class="card card-outline-primary text-xs-center">
-                <div class="card-block">
-                  <blockquote class="card-blockquote">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                  </blockquote>
+              <div class="card border-primary mb-3" style="max-width: 20rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h4 class="card-title">Primary card title</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
               </div>
-              <div class="card card-outline-success text-xs-center">
-                <div class="card-block">
-                  <blockquote class="card-blockquote">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                  </blockquote>
+              <div class="card border-secondary mb-3" style="max-width: 20rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h4 class="card-title">Secondary card title</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
               </div>
-              <div class="card card-outline-info text-xs-center">
-                <div class="card-block">
-                  <blockquote class="card-blockquote">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                  </blockquote>
+              <div class="card border-success mb-3" style="max-width: 20rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h4 class="card-title">Success card title</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
               </div>
-              <div class="card card-outline-warning text-xs-center">
-                <div class="card-block">
-                  <blockquote class="card-blockquote">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                  </blockquote>
+              <div class="card border-danger mb-3" style="max-width: 20rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h4 class="card-title">Danger card title</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
               </div>
-              <div class="card card-outline-danger text-xs-center">
-                <div class="card-block">
-                  <blockquote class="card-blockquote">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                  </blockquote>
+              <div class="card border-warning mb-3" style="max-width: 20rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h4 class="card-title">Warning card title</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              <div class="card border-info mb-3" style="max-width: 20rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h4 class="card-title">Info card title</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              <div class="card border-light mb-3" style="max-width: 20rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h4 class="card-title">Light card title</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              <div class="card border-dark mb-3" style="max-width: 20rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h4 class="card-title">Dark card title</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
               </div>
             </div>
@@ -1152,20 +1306,36 @@ echo $OUTPUT->heading($strheading);
 
           <div class="col-lg-4">
             <div class="bs-component">
-              <div class="card">
+              <div class="card mb-3">
                 <h3 class="card-header">Card header</h3>
-                <div class="card-block">
+                <div class="card-body">
                   <h5 class="card-title">Special title treatment</h5>
                   <h6 class="card-subtitle text-muted">Support card subtitle</h6>
                 </div>
                 <img style="height: 200px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22318%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20318%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_158bd1d28ef%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A16pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_158bd1d28ef%22%3E%3Crect%20width%3D%22318%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22129.359375%22%20y%3D%2297.35%22%3EImage%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Card image">
-                <div class="card-block">
+                <div class="card-body">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Cras justo odio</li>
+                  <li class="list-group-item">Dapibus ac facilisis in</li>
+                  <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+                <div class="card-body">
                   <a href="#" class="card-link">Card link</a>
                   <a href="#" class="card-link">Another link</a>
                 </div>
-                <div class="card-footer text-muted text-xs-center">
+                <div class="card-footer text-muted">
                   2 days ago
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Card title</h4>
+                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
                 </div>
               </div>
             </div>
@@ -1240,8 +1410,8 @@ echo $OUTPUT->heading($strheading);
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
               <h4 class="modal-title">Source Code</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
             </div>
             <div class="modal-body">
               <pre></pre>
@@ -1249,6 +1419,31 @@ echo $OUTPUT->heading($strheading);
           </div>
         </div>
       </div>
+
+      <footer id="footer">
+        <div class="row">
+          <div class="col-lg-12">
+
+            <ul class="list-unstyled">
+              <li class="float-lg-right"><a href="#top">Back to top</a></li>
+              <li><a href="http://blog.bootswatch.com" onclick="pageTracker._link(this.href); return false;">Blog</a></li>
+              <li><a href="https://feeds.feedburner.com/bootswatch">RSS</a></li>
+              <li><a href="https://twitter.com/bootswatch">Twitter</a></li>
+              <li><a href="https://github.com/thomaspark/bootswatch/">GitHub</a></li>
+              <li><a href="../help/#api">API</a></li>
+              <li><a href="../help/#donate">Donate</a></li>
+            </ul>
+            <p>Made by <a href="http://thomaspark.co">Thomas Park</a>.</p>
+            <p>Code released under the <a href="https://github.com/thomaspark/bootswatch/blob/master/LICENSE">MIT License</a>.</p>
+            <p>Based on <a href="https://getbootstrap.com" rel="nofollow">Bootstrap</a>. Icons from <a href="http://fontawesome.io/" rel="nofollow">Font Awesome</a>. Web fonts from <a href="https://fonts.google.com/" rel="nofollow">Google</a>.</p>
+
+          </div>
+        </div>
+
+      </footer>
+
+
+    </div>
 <?php
 // TODO add JS from original site to make the Modal and Popup examples work.
 echo $OUTPUT->footer();
