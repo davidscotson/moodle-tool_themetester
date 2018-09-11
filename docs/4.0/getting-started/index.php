@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Bootstrap · Content moved</title>
-    <link rel="canonical" href="/admin/tool/themetester/docs/4.0/getting-started/introduction/">
+    <link rel="canonical" href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/getting-started/introduction/">
     <meta http-equiv="refresh" content="0; url=/admin/tool/themetester/docs/4.0/getting-started/introduction/">
     <meta name="robots" content="noindex">
     <style>
@@ -32,7 +32,7 @@
   </head>
   <body>
     <h1>Redirecting&hellip;</h1>
-    <a href="/admin/tool/themetester/docs/4.0/getting-started/introduction/">Click here if you are not redirected</a>
-    <script>window.location="/admin/tool/themetester/docs/4.0/getting-started/introduction/";</script>
+    <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/getting-started/introduction/">Click here if you are not redirected</a>
+    <script>window.location="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/getting-started/introduction/";</script>
   </body>
 </html>

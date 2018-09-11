@@ -49,13 +49,13 @@ echo $OUTPUT->heading($strheading);
 ?>
 
 <!-- Favicons -->
-<link rel="apple-touch-icon" href="/admin/tool/themetester/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="/admin/tool/themetester/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="/admin/tool/themetester/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="manifest" href="/admin/tool/themetester/assets/img/favicons/manifest.json">
-<link rel="mask-icon" href="/admin/tool/themetester/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
-<link rel="icon" href="/admin/tool/themetester/favicon.ico">
-<meta name="msapplication-config" content="/admin/tool/themetester/assets/img/favicons/browserconfig.xml">
+<link rel="apple-touch-icon" href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/favicon.ico">
+<meta name="msapplication-config" content="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/assets/img/favicons/browserconfig.xml">
 <meta name="theme-color" content="#563d7c">
 
 
@@ -91,237 +91,237 @@ echo $OUTPUT->heading($strheading);
 </form>
 
 <nav class="collapse bd-links" id="bd-docs-nav"><div class="bd-toc-item">
-      <a class="bd-toc-link" href="/admin/tool/themetester/docs/4.0/getting-started/introduction/">
+      <a class="bd-toc-link" href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/getting-started/introduction/">
         Getting started
       </a>
 
       <ul class="nav bd-sidenav"><li>
-            <a href="/admin/tool/themetester/docs/4.0/getting-started/introduction/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/getting-started/introduction/">
               Introduction
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/getting-started/download/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/getting-started/download/">
               Download
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/getting-started/contents/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/getting-started/contents/">
               Contents
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/getting-started/browsers-devices/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/getting-started/browsers-devices/">
               Browsers & devices
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/getting-started/javascript/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/getting-started/javascript/">
               JavaScript
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/getting-started/theming/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/getting-started/theming/">
               Theming
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/getting-started/build-tools/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/getting-started/build-tools/">
               Build tools
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/getting-started/webpack/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/getting-started/webpack/">
               Webpack
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/getting-started/accessibility/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/getting-started/accessibility/">
               Accessibility
             </a></li></ul>
     </div><div class="bd-toc-item">
-      <a class="bd-toc-link" href="/admin/tool/themetester/docs/4.0/layout/overview/">
+      <a class="bd-toc-link" href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/layout/overview/">
         Layout
       </a>
 
       <ul class="nav bd-sidenav"><li>
-            <a href="/admin/tool/themetester/docs/4.0/layout/overview/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/layout/overview/">
               Overview
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/layout/grid/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/layout/grid/">
               Grid
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/layout/media-object/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/layout/media-object/">
               Media object
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/layout/utilities-for-layout/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/layout/utilities-for-layout/">
               Utilities for layout
             </a></li></ul>
     </div><div class="bd-toc-item">
-      <a class="bd-toc-link" href="/admin/tool/themetester/docs/4.0/content/reboot/">
+      <a class="bd-toc-link" href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/content/reboot/">
         Content
       </a>
 
       <ul class="nav bd-sidenav"><li>
-            <a href="/admin/tool/themetester/docs/4.0/content/reboot/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/content/reboot/">
               Reboot
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/content/typography/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/content/typography/">
               Typography
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/content/code/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/content/code/">
               Code
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/content/images/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/content/images/">
               Images
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/content/tables/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/content/tables/">
               Tables
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/content/figures/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/content/figures/">
               Figures
             </a></li></ul>
     </div><div class="bd-toc-item">
-      <a class="bd-toc-link" href="/admin/tool/themetester/docs/4.0/components/alerts/">
+      <a class="bd-toc-link" href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/components/alerts/">
         Components
       </a>
 
       <ul class="nav bd-sidenav"><li>
-            <a href="/admin/tool/themetester/docs/4.0/components/alerts/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/components/alerts/">
               Alerts
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/components/badge/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/components/badge/">
               Badge
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/components/breadcrumb/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/components/breadcrumb/">
               Breadcrumb
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/components/buttons/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/components/buttons/">
               Buttons
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/components/button-group/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/components/button-group/">
               Button group
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/components/card/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/components/card/">
               Card
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/components/carousel/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/components/carousel/">
               Carousel
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/components/collapse/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/components/collapse/">
               Collapse
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/components/dropdowns/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/components/dropdowns/">
               Dropdowns
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/components/forms/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/components/forms/">
               Forms
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/components/input-group/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/components/input-group/">
               Input group
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/components/jumbotron/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/components/jumbotron/">
               Jumbotron
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/components/list-group/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/components/list-group/">
               List group
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/components/modal/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/components/modal/">
               Modal
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/components/navs/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/components/navs/">
               Navs
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/components/navbar/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/components/navbar/">
               Navbar
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/components/pagination/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/components/pagination/">
               Pagination
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/components/popovers/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/components/popovers/">
               Popovers
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/components/progress/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/components/progress/">
               Progress
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/components/scrollspy/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/components/scrollspy/">
               Scrollspy
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/components/tooltips/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/components/tooltips/">
               Tooltips
             </a></li></ul>
     </div><div class="bd-toc-item">
-      <a class="bd-toc-link" href="/admin/tool/themetester/docs/4.0/utilities/borders/">
+      <a class="bd-toc-link" href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/utilities/borders/">
         Utilities
       </a>
 
       <ul class="nav bd-sidenav"><li>
-            <a href="/admin/tool/themetester/docs/4.0/utilities/borders/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/utilities/borders/">
               Borders
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/utilities/clearfix/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/utilities/clearfix/">
               Clearfix
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/utilities/close-icon/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/utilities/close-icon/">
               Close icon
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/utilities/colors/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/utilities/colors/">
               Colors
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/utilities/display/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/utilities/display/">
               Display
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/utilities/embed/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/utilities/embed/">
               Embed
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/utilities/flex/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/utilities/flex/">
               Flex
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/utilities/float/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/utilities/float/">
               Float
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/utilities/image-replacement/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/utilities/image-replacement/">
               Image replacement
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/utilities/position/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/utilities/position/">
               Position
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/utilities/screenreaders/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/utilities/screenreaders/">
               Screenreaders
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/utilities/sizing/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/utilities/sizing/">
               Sizing
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/utilities/spacing/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/utilities/spacing/">
               Spacing
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/utilities/text/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/utilities/text/">
               Text
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/utilities/vertical-align/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/utilities/vertical-align/">
               Vertical align
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/utilities/visibility/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/utilities/visibility/">
               Visibility
             </a></li></ul>
     </div><div class="bd-toc-item">
-      <a class="bd-toc-link" href="/admin/tool/themetester/docs/4.0/extend/approach/">
+      <a class="bd-toc-link" href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/extend/approach/">
         Extend
       </a>
 
       <ul class="nav bd-sidenav"><li>
-            <a href="/admin/tool/themetester/docs/4.0/extend/approach/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/extend/approach/">
               Approach
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/extend/icons/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/extend/icons/">
               Icons
             </a></li></ul>
     </div><div class="bd-toc-item active">
-      <a class="bd-toc-link" href="/admin/tool/themetester/docs/4.0/migration/">
+      <a class="bd-toc-link" href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/migration/">
         Migration
       </a>
 
       <ul class="nav bd-sidenav"></ul>
     </div><div class="bd-toc-item">
-      <a class="bd-toc-link" href="/admin/tool/themetester/docs/4.0/about/overview/">
+      <a class="bd-toc-link" href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/about/overview/">
         About
       </a>
 
       <ul class="nav bd-sidenav"><li>
-            <a href="/admin/tool/themetester/docs/4.0/about/overview/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/about/overview/">
               Overview
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/about/brand/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/about/brand/">
               Brand
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/about/license/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/about/license/">
               License
             </a></li><li>
-            <a href="/admin/tool/themetester/docs/4.0/about/translations/">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/about/translations/">
               Translations
             </a></li></ul>
     </div></nav>
@@ -505,7 +505,7 @@ echo $OUTPUT->heading($strheading);
   <li>Build system overhauled to use a series of npm scripts instead of Grunt. See <code class="highlighter-rouge">package.json</code> for all scripts, or our project readme for local development needs.</li>
   <li>Non-responsive usage of Bootstrap is no longer supported.</li>
   <li>Dropped the online Customizer in favor of more extensive setup documentation and customized builds.</li>
-  <li>Added dozens of new <a href="/admin/tool/themetester/docs/4.0/utilities/">utility classes</a> for common CSS property-value pairs and margin/padding spacing shortcuts.</li>
+  <li>Added dozens of new <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/utilities/">utility classes</a> for common CSS property-value pairs and margin/padding spacing shortcuts.</li>
 </ul>
 
 <h3 id="grid-system">Grid system</h3>
@@ -537,13 +537,13 @@ echo $OUTPUT->heading($strheading);
 <h3 id="components">Components</h3>
 
 <ul>
-  <li><strong>Dropped panels, thumbnails, and wells</strong> for a new all-encompassing component, <a href="/admin/tool/themetester/docs/4.0/components/card/">cards</a>.</li>
+  <li><strong>Dropped panels, thumbnails, and wells</strong> for a new all-encompassing component, <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/components/card/">cards</a>.</li>
   <li><strong>Dropped the Glyphicons icon font.</strong> If you need icons, some options are:
     <ul>
       <li>the upstream version of <a href="https://glyphicons.com/">Glyphicons</a></li>
       <li><a href="https://octicons.github.com/">Octicons</a></li>
       <li><a href="https://fontawesome.com/">Font Awesome</a></li>
-      <li>See the <a href="/admin/tool/themetester/docs/4.0/extend/icons/">Extend page</a> for a list of alternatives. Have additional suggestions? Please open an issue or PR.</li>
+      <li>See the <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/extend/icons/">Extend page</a> for a list of alternatives. Have additional suggestions? Please open an issue or PR.</li>
     </ul>
   </li>
   <li><strong>Dropped the Affix jQuery plugin.</strong>
@@ -562,7 +562,7 @@ echo $OUTPUT->heading($strheading);
 
 <h3 id="reboot">Reboot</h3>
 
-<p>New to Bootstrap 4 is the <a href="/admin/tool/themetester/docs/4.0/content/reboot/">Reboot</a>, a new stylesheet that builds on Normalize with our own somewhat opinionated reset styles. Selectors appearing in this file only use elements—there are no classes here. This isolates our reset styles from our component styles for a more modular approach. Some of the most important resets this includes are the <code class="highlighter-rouge">box-sizing: border-box</code> change, moving from <code class="highlighter-rouge">em</code> to <code class="highlighter-rouge">rem</code> units on many elements, link styles, and many form element resets.</p>
+<p>New to Bootstrap 4 is the <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/content/reboot/">Reboot</a>, a new stylesheet that builds on Normalize with our own somewhat opinionated reset styles. Selectors appearing in this file only use elements—there are no classes here. This isolates our reset styles from our component styles for a more modular approach. Some of the most important resets this includes are the <code class="highlighter-rouge">box-sizing: border-box</code> change, moving from <code class="highlighter-rouge">em</code> to <code class="highlighter-rouge">rem</code> units on many elements, link styles, and many form element resets.</p>
 
 <h3 id="typography">Typography</h3>
 
@@ -690,7 +690,7 @@ echo $OUTPUT->heading($strheading);
 <ul>
   <li>Responsive navbar behaviors are now applied to the <code class="highlighter-rouge">.navbar</code> class via the <strong>required</strong> <code class="highlighter-rouge">.navbar-expand-{breakpoint}</code> where you choose where to collapse the navbar. Previously this was a Less variable modification and required recompiling.</li>
   <li><code class="highlighter-rouge">.navbar-default</code> is now <code class="highlighter-rouge">.navbar-light</code>, though <code class="highlighter-rouge">.navbar-dark</code> remains the same. <strong>One of these is required on each navbar.</strong> However, these classes no longer set <code class="highlighter-rouge">background-color</code>s; instead they essentially only affect <code class="highlighter-rouge">color</code>.</li>
-  <li>Navbars now require a background declaration of some kind. Choose from our background utilities (<code class="highlighter-rouge">.bg-*</code>) or set your own with the light/inverse classes above <a href="/admin/tool/themetester/docs/4.0/components/navbar/#color-schemes">for mad customization</a>.</li>
+  <li>Navbars now require a background declaration of some kind. Choose from our background utilities (<code class="highlighter-rouge">.bg-*</code>) or set your own with the light/inverse classes above <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/components/navbar/#color-schemes">for mad customization</a>.</li>
   <li>Given flexbox styles, navbars can now use flexbox utilities for easy alignment options.</li>
   <li><code class="highlighter-rouge">.navbar-toggle</code> is now <code class="highlighter-rouge">.navbar-toggler</code> and has different styles and inner markup (no more three <code class="highlighter-rouge">&lt;span&gt;</code>s).</li>
   <li>Dropped the <code class="highlighter-rouge">.navbar-form</code> class entirely. It’s no longer necessary; instead, just use <code class="highlighter-rouge">.form-inline</code> and apply margin utilities as necessary.</li>
@@ -732,7 +732,7 @@ echo $OUTPUT->heading($strheading);
   <li><code class="highlighter-rouge">.panel-default</code> removed and no replacement.</li>
   <li><code class="highlighter-rouge">.panel-group</code> removed and no replacement. <code class="highlighter-rouge">.card-group</code> is not a replacement, it is different.</li>
   <li><code class="highlighter-rouge">.panel-heading</code> to <code class="highlighter-rouge">.card-header</code></li>
-  <li><code class="highlighter-rouge">.panel-title</code> to <code class="highlighter-rouge">.card-title</code>. Depending on the desired look, you may also want to use <a href="/admin/tool/themetester/docs/4.0/content/typography/#headings">heading elements or classes</a> (e.g. <code class="highlighter-rouge">&lt;h3&gt;</code>, <code class="highlighter-rouge">.h3</code>) or bold elements or classes (e.g. <code class="highlighter-rouge">&lt;strong&gt;</code>, <code class="highlighter-rouge">&lt;b&gt;</code>, <a href="/admin/tool/themetester/docs/4.0/utilities/text/#font-weight-and-italics"><code class="highlighter-rouge">.font-weight-bold</code></a>). Note that <code class="highlighter-rouge">.card-title</code>, while similarly named, produces a different look than <code class="highlighter-rouge">.panel-title</code>.</li>
+  <li><code class="highlighter-rouge">.panel-title</code> to <code class="highlighter-rouge">.card-title</code>. Depending on the desired look, you may also want to use <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/content/typography/#headings">heading elements or classes</a> (e.g. <code class="highlighter-rouge">&lt;h3&gt;</code>, <code class="highlighter-rouge">.h3</code>) or bold elements or classes (e.g. <code class="highlighter-rouge">&lt;strong&gt;</code>, <code class="highlighter-rouge">&lt;b&gt;</code>, <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/utilities/text/#font-weight-and-italics"><code class="highlighter-rouge">.font-weight-bold</code></a>). Note that <code class="highlighter-rouge">.card-title</code>, while similarly named, produces a different look than <code class="highlighter-rouge">.panel-title</code>.</li>
   <li><code class="highlighter-rouge">.panel-body</code> to <code class="highlighter-rouge">.card-body</code></li>
   <li><code class="highlighter-rouge">.panel-footer</code> to <code class="highlighter-rouge">.card-footer</code></li>
   <li><code class="highlighter-rouge">.panel-primary</code>, <code class="highlighter-rouge">.panel-success</code>, <code class="highlighter-rouge">.panel-info</code>, <code class="highlighter-rouge">.panel-warning</code>, and <code class="highlighter-rouge">.panel-danger</code> have been dropped for <code class="highlighter-rouge">.bg-</code>, <code class="highlighter-rouge">.text-</code>, and <code class="highlighter-rouge">.border</code> utilities generated from our <code class="highlighter-rouge">$theme-colors</code> Sass map.</li>
@@ -774,7 +774,7 @@ echo $OUTPUT->heading($strheading);
   <li><strong>Display, hidden, and more:</strong>
     <ul>
       <li>Made display utilities responsive (e.g., <code class="highlighter-rouge">.d-none</code> and <code class="highlighter-rouge">d-{sm,md,lg,xl}-none</code>).</li>
-      <li>Dropped the bulk of <code class="highlighter-rouge">.hidden-*</code> utilities for new <a href="/admin/tool/themetester/docs/4.0/utilities/display/">display utilities</a>. For example, instead of <code class="highlighter-rouge">.hidden-sm-up</code>, use <code class="highlighter-rouge">.d-sm-none</code>. Renamed the <code class="highlighter-rouge">.hidden-print</code> utilities to use the display utility naming scheme. <a href="#responsive-utilities">More info under the Responsive utilities section of this page.</a></li>
+      <li>Dropped the bulk of <code class="highlighter-rouge">.hidden-*</code> utilities for new <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/utilities/display/">display utilities</a>. For example, instead of <code class="highlighter-rouge">.hidden-sm-up</code>, use <code class="highlighter-rouge">.d-sm-none</code>. Renamed the <code class="highlighter-rouge">.hidden-print</code> utilities to use the display utility naming scheme. <a href="#responsive-utilities">More info under the Responsive utilities section of this page.</a></li>
       <li>Added <code class="highlighter-rouge">.float-{sm,md,lg,xl}-{left,right,none}</code> classes for responsive floats and removed <code class="highlighter-rouge">.pull-left</code> and <code class="highlighter-rouge">.pull-right</code> since they’re redundant to <code class="highlighter-rouge">.float-left</code> and <code class="highlighter-rouge">.float-right</code>.</li>
     </ul>
   </li>
@@ -785,8 +785,8 @@ echo $OUTPUT->heading($strheading);
   </li>
   <li><strong>Alignment and spacing:</strong>
     <ul>
-      <li>Added new <a href="/admin/tool/themetester/docs/4.0/utilities/spacing/">responsive margin and padding utilities</a> for all sides, plus vertical and horizontal shorthands.</li>
-      <li>Added boatload of <a href="/admin/tool/themetester/docs/4.0/utilities/flex/">flexbox utilities</a>.</li>
+      <li>Added new <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/utilities/spacing/">responsive margin and padding utilities</a> for all sides, plus vertical and horizontal shorthands.</li>
+      <li>Added boatload of <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/utilities/flex/">flexbox utilities</a>.</li>
       <li>Dropped <code class="highlighter-rouge">.center-block</code> for the new <code class="highlighter-rouge">.mx-auto</code> class.</li>
     </ul>
   </li>
@@ -806,7 +806,7 @@ echo $OUTPUT->heading($strheading);
 <ul>
   <li>We’re still using Jekyll, but we have plugins in the mix:
     <ul>
-      <li><code class="highlighter-rouge">bugify.rb</code> is used to efficiently list out the entries on our <a href="/admin/tool/themetester/docs/4.0/browser-bugs/">browser bugs</a> page.</li>
+      <li><code class="highlighter-rouge">bugify.rb</code> is used to efficiently list out the entries on our <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/browser-bugs/">browser bugs</a> page.</li>
       <li><code class="highlighter-rouge">example.rb</code> is a custom fork of the default <code class="highlighter-rouge">highlight.rb</code> plugin, allowing for easier example-code handling.</li>
       <li><code class="highlighter-rouge">callout.rb</code> is a similar custom fork of that, but designed for our special docs callouts.</li>
       <li><a href="https://github.com/toshimaru/jekyll-toc">jekyll-toc</a> is used to generate our table of contents.</li>
@@ -847,11 +847,11 @@ echo $OUTPUT->heading($strheading);
       </div>
     </div>
 
-    <script src="/admin/tool/themetester/assets/js/vendor/popper.min.js"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script><script src="/admin/tool/themetester/assets/js/vendor/anchor.min.js"></script>
-  <script src="/admin/tool/themetester/assets/js/vendor/clipboard.min.js"></script>
-  <script src="/admin/tool/themetester/assets/js/vendor/holder.min.js"></script>
-  <script src="/admin/tool/themetester/assets/js/src/application.js"></script>
-  <script src="/admin/tool/themetester/assets/js/src/ie-emulation-modes-warning.js"></script>
-  <script src="/admin/tool/themetester/assets/js/src/pwa.js"></script>
+    <script src="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/assets/js/vendor/popper.min.js"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script><script src="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/assets/js/vendor/anchor.min.js"></script>
+  <script src="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/assets/js/vendor/clipboard.min.js"></script>
+  <script src="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/assets/js/vendor/holder.min.js"></script>
+  <script src="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/assets/js/src/application.js"></script>
+  <script src="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/assets/js/src/ie-emulation-modes-warning.js"></script>
+  <script src="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/assets/js/src/pwa.js"></script>
   </body>
 </html>

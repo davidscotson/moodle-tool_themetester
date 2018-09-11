@@ -61,7 +61,7 @@ echo $OUTPUT->heading($strheading);
 
   <div class="bd-toc-item ">
     
-        <a class="bd-toc-link" href="/admin/tool/themetester/docs/4.0.0-alpha.4/getting-started/introduction">
+        <a class="bd-toc-link" href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/getting-started/introduction">
       
         Getting started
       </a>
@@ -75,7 +75,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/getting-started/introduction">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/getting-started/introduction">
               Introduction
             </a>
 
@@ -89,7 +89,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/getting-started/download">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/getting-started/download">
               Download
             </a>
 
@@ -103,7 +103,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/getting-started/contents">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/getting-started/contents">
               Contents
             </a>
 
@@ -117,7 +117,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/getting-started/browsers-devices">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/getting-started/browsers-devices">
               Browsers & devices
             </a>
 
@@ -131,7 +131,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/getting-started/javascript">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/getting-started/javascript">
               JavaScript
             </a>
 
@@ -145,7 +145,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/getting-started/options">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/getting-started/options">
               Options
             </a>
 
@@ -159,7 +159,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/getting-started/flexbox">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/getting-started/flexbox">
               Flexbox
             </a>
 
@@ -173,7 +173,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/getting-started/build-tools">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/getting-started/build-tools">
               Build tools
             </a>
 
@@ -187,7 +187,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/getting-started/best-practices">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/getting-started/best-practices">
               Best practices
             </a>
 
@@ -201,7 +201,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/getting-started/accessibility">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/getting-started/accessibility">
               Accessibility
             </a>
 
@@ -219,7 +219,7 @@ echo $OUTPUT->heading($strheading);
 
   <div class="bd-toc-item ">
     
-        <a class="bd-toc-link" href="/admin/tool/themetester/docs/4.0.0-alpha.4/layout/overview">
+        <a class="bd-toc-link" href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/layout/overview">
       
         Layout
       </a>
@@ -233,7 +233,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/layout/overview">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/layout/overview">
               Overview
             </a>
 
@@ -247,7 +247,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/layout/grid">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/layout/grid">
               Grid
             </a>
 
@@ -261,7 +261,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/layout/flexbox-grid">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/layout/flexbox-grid">
               Flexbox grid
             </a>
 
@@ -275,7 +275,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/layout/media-object">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/layout/media-object">
               Media object
             </a>
 
@@ -289,7 +289,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/layout/responsive-utilities">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/layout/responsive-utilities">
               Responsive utilities
             </a>
 
@@ -307,7 +307,7 @@ echo $OUTPUT->heading($strheading);
 
   <div class="bd-toc-item ">
     
-        <a class="bd-toc-link" href="/admin/tool/themetester/docs/4.0.0-alpha.4/content/reboot">
+        <a class="bd-toc-link" href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/content/reboot">
       
         Content
       </a>
@@ -321,7 +321,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/content/reboot">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/content/reboot">
               Reboot
             </a>
 
@@ -335,7 +335,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/content/typography">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/content/typography">
               Typography
             </a>
 
@@ -349,7 +349,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/content/code">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/content/code">
               Code
             </a>
 
@@ -363,7 +363,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/content/images">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/content/images">
               Images
             </a>
 
@@ -377,7 +377,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/content/tables">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/content/tables">
               Tables
             </a>
 
@@ -391,7 +391,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/content/figures">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/content/figures">
               Figures
             </a>
 
@@ -409,7 +409,7 @@ echo $OUTPUT->heading($strheading);
 
   <div class="bd-toc-item active">
     
-        <a class="bd-toc-link" href="/admin/tool/themetester/docs/4.0.0-alpha.4/components/alerts">
+        <a class="bd-toc-link" href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/components/alerts">
       
         Components
       </a>
@@ -423,7 +423,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/components/alerts">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/components/alerts">
               Alerts
             </a>
 
@@ -437,7 +437,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/components/breadcrumb">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/components/breadcrumb">
               Breadcrumb
             </a>
 
@@ -451,7 +451,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/components/buttons">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/components/buttons">
               Buttons
             </a>
 
@@ -465,7 +465,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/components/button-group">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/components/button-group">
               Button group
             </a>
 
@@ -479,7 +479,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/components/card">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/components/card">
               Card
             </a>
 
@@ -493,7 +493,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/components/carousel">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/components/carousel">
               Carousel
             </a>
 
@@ -507,7 +507,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/components/collapse">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/components/collapse">
               Collapse
             </a>
 
@@ -521,7 +521,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/components/dropdowns">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/components/dropdowns">
               Dropdowns
             </a>
 
@@ -535,7 +535,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/components/forms">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/components/forms">
               Forms
             </a>
 
@@ -549,7 +549,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/components/input-group">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/components/input-group">
               Input group
             </a>
 
@@ -563,7 +563,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/components/jumbotron">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/components/jumbotron">
               Jumbotron
             </a>
 
@@ -577,7 +577,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/components/list-group">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/components/list-group">
               List group
             </a>
 
@@ -591,7 +591,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/components/modal">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/components/modal">
               Modal
             </a>
 
@@ -605,7 +605,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/components/navs">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/components/navs">
               Navs
             </a>
 
@@ -619,7 +619,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/components/navbar">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/components/navbar">
               Navbar
             </a>
 
@@ -633,7 +633,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="active bd-sidenav-active">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/components/pagination">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/components/pagination">
               Pagination
             </a>
 
@@ -647,7 +647,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/components/popovers">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/components/popovers">
               Popovers
             </a>
 
@@ -661,7 +661,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/components/progress">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/components/progress">
               Progress
             </a>
 
@@ -675,7 +675,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/components/scrollspy">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/components/scrollspy">
               Scrollspy
             </a>
 
@@ -689,7 +689,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/components/tag">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/components/tag">
               Tag
             </a>
 
@@ -703,7 +703,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/components/tooltips">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/components/tooltips">
               Tooltips
             </a>
 
@@ -717,7 +717,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/components/utilities">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/components/utilities">
               Utilities
             </a>
 
@@ -735,7 +735,7 @@ echo $OUTPUT->heading($strheading);
 
   <div class="bd-toc-item ">
     
-        <a class="bd-toc-link" href="/admin/tool/themetester/docs/4.0.0-alpha.4/about/history">
+        <a class="bd-toc-link" href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/about/history">
       
         About
       </a>
@@ -749,7 +749,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/about/history">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/about/history">
               History
             </a>
 
@@ -763,7 +763,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/about/team">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/about/team">
               Team
             </a>
 
@@ -777,7 +777,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/about/brand">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/about/brand">
               Brand
             </a>
 
@@ -791,7 +791,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/about/license">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/about/license">
               License
             </a>
 
@@ -805,7 +805,7 @@ echo $OUTPUT->heading($strheading);
           
 
           <li class="">
-            <a href="/admin/tool/themetester/docs/4.0.0-alpha.4/about/translations">
+            <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/about/translations">
               Translations
             </a>
 
@@ -823,7 +823,7 @@ echo $OUTPUT->heading($strheading);
 
   <div class="bd-toc-item ">
     
-        <a class="bd-toc-link" href="/admin/tool/themetester/docs/4.0.0-alpha.4/migration/">
+        <a class="bd-toc-link" href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/migration/">
       
         Migration
       </a>
@@ -1086,8 +1086,8 @@ echo $OUTPUT->heading($strheading);
     <ul class="bd-footer-links">
       <li><a href="https://github.com/twbs/bootstrap">GitHub</a></li>
       <li><a href="https://twitter.com/getbootstrap">Twitter</a></li>
-      <li><a href="/admin/tool/themetester/docs/4.0.0-alpha.4/examples/">Examples</a></li>
-      <li><a href="/admin/tool/themetester/docs/4.0.0-alpha.4/about/history/">About</a></li>
+      <li><a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/examples/">Examples</a></li>
+      <li><a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/about/history/">About</a></li>
     </ul>
     <p>Designed and built with all the love in the world by <a href="https://twitter.com/mdo" target="_blank">@mdo</a> and <a href="https://twitter.com/fat" target="_blank">@fat</a>. Maintained by the <a href="https://github.com/orgs/twbs/people">core team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</p>
     <p>Currently v4.0.0-alpha.4. Code licensed <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, docs <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.</p>
@@ -1095,32 +1095,32 @@ echo $OUTPUT->heading($strheading);
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="/admin/tool/themetester/docs/4.0.0-alpha.4/assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/assets/js/vendor/jquery.min.js"><\/script>')</script>
 
-<script src="/admin/tool/themetester/docs/4.0.0-alpha.4/assets/js/vendor/tether.min.js"></script>
+<script src="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/assets/js/vendor/tether.min.js"></script>
 
 
-  <script src="/admin/tool/themetester/docs/4.0.0-alpha.4/dist/js/bootstrap.js"></script>
+  <script src="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/dist/js/bootstrap.js"></script>
 
 
 
   
-    <script src="/admin/tool/themetester/docs/4.0.0-alpha.4/assets/js/vendor/anchor.min.js"></script>
+    <script src="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/assets/js/vendor/anchor.min.js"></script>
   
-    <script src="/admin/tool/themetester/docs/4.0.0-alpha.4/assets/js/vendor/clipboard.min.js"></script>
+    <script src="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/assets/js/vendor/clipboard.min.js"></script>
   
-    <script src="/admin/tool/themetester/docs/4.0.0-alpha.4/assets/js/vendor/holder.min.js"></script>
+    <script src="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/assets/js/vendor/holder.min.js"></script>
   
-    <script src="/admin/tool/themetester/docs/4.0.0-alpha.4/assets/js/src/application.js"></script>
+    <script src="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/assets/js/src/application.js"></script>
   
 
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="/admin/tool/themetester/docs/4.0.0-alpha.4/assets/js/ie10-viewport-bug-workaround.js"></script>
-<script src="/admin/tool/themetester/docs/4.0.0-alpha.4/assets/js/ie-emulation-modes-warning.js"></script>
+<script src="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/assets/js/ie-emulation-modes-warning.js"></script>
 
 
-<script src="/admin/tool/themetester/docs/4.0.0-alpha.4/assets/js/vendor/jekyll-search.min.js"></script>
+<script src="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0.0-alpha.4/assets/js/vendor/jekyll-search.min.js"></script>
 
 <script>
 SimpleJekyllSearch.init({

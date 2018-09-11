@@ -63,8 +63,11 @@ class standard_form_elements extends moodleform {
         $mform->addElement('button', 'buttonfield', 'Button text');
         $mform->disabledIf('buttonfield', 'disableelements', 'checked');
 
-        $mform->addElement('checkbox', 'checkboxfield', 'A checkbox', 'Label next to checkbox');
+        $mform->addElement('checkbox', 'checkboxfield', 'A checkbox with a label above and beside ', 'Label next to checkbox');
         $mform->disabledIf('checkboxfield', 'disableelements', 'checked');
+
+        $mform->addElement('checkbox', 'checkboxonelabel', 'A checkbox with only one label');
+        $mform->disabledIf('checkboxonelabel', 'disableelements', 'checked');
 
         $this->add_checkbox_controller(1);
         $mform->addElement('advcheckbox', 'advcheckboxfield1', 'Advanced checkbox 1', 'Label next to advanced checkbox 1', array('group' => 1));
@@ -73,6 +76,9 @@ class standard_form_elements extends moodleform {
         $mform->disabledIf('advcheckboxfield1', 'disableelements', 'checked');
         $mform->disabledIf('advcheckboxfield2', 'disableelements', 'checked');
         $mform->disabledIf('advcheckboxfield3', 'disableelements', 'checked');
+
+        $mform->addElement('advcheckbox', 'advcheckboxonelabel', 'Advanced checkbox with only one label', null,  array('group' => 1));
+        $mform->disabledIf('advcheckboxonelabel', 'disableelements', 'checked');
 
 
         $mform->addElement('static', 'datedes', '', 'Don\'t forget to style the popup dialog');
@@ -112,6 +118,7 @@ class standard_form_elements extends moodleform {
         $mform->addElement('static', 'radiodes', '', 'Usually radio buttons are grouped, see grouped page for details');
         $mform->addElement('radio', 'radiofield', 'Radio', 'Text to right of radio', 1);
         $mform->addElement('radio', 'radiofield', 'Radio 2', 'Text to right of radio 2', 2);
+        $mform->addElement('radio', 'radiofield', 'Radio with only one label', null, 3);
         $mform->disabledIf('radiofield', 'disableelements', 'checked');
 
         $mform->addElement('select', 'selectfield', 'Single select', array(0 => 'Item 1', 1 => 'Item 2', 3 => 'Item 3'));

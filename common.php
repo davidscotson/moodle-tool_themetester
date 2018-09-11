@@ -80,6 +80,8 @@ echo html_writer::tag('cite', 'A text citation');
 echo ' Lorum Ipsum ';
 echo html_writer::tag('code', 'A string of code');
 echo ' Lorum Ipsum ';
+echo html_writer::tag('mark', 'A highlighted search string');
+echo ' Lorum Ipsum ';
 echo html_writer::tag('dfn', 'A defined term as text');
 echo ' Lorum Ipsum ';
 echo html_writer::tag('kbd', 'Text to be entered on the keyboard');
