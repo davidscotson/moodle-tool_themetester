@@ -47,13 +47,9 @@ echo $OUTPUT->container('This page contains a set of sample elements used on thi
 echo $OUTPUT->container_start();
 
 $contents = array(
-    'Bootstrap 3 CSS' => 'bs3_css.php',
-    'Bootstrap 3 Components' => 'bs3_components.php',
-    'Bootstrap 3 Javascript' => 'bs3_javascript.php',
-    'Bootswatch 3 Examples' => 'bootswatch3.php',
-    'Bootstrap 4 alpha 4 docs' => 'docs/4.0.0-alpha.4/getting-started/introduction/index.php',
-    'Bootswatch 4 beta2 Examples' => 'bootswatch4.php',
-    'Bootstrap 4 docs' => 'docs/4.0/index.php',
+    'Bootswatch 4' => 'bootswatch4.php',
+    'Bootstrap 4' => 'docs/4.0/index.php',
+    'Font Awesome 4.7' => 'fontawesome.php',
     'Headings' => 'headings.php',
     'Common tags' => 'common.php',
     'Lists' => 'lists.php',
@@ -67,6 +63,11 @@ $contents = array(
     'Confirmation' => 'confirm.php',
     'Progress Bars' => 'progress.php',
     'Page Layouts' => 'pagelayouts.php',
+    'Bootstrap 3 CSS' => 'bs3_css.php',
+    'Bootstrap 3 Components' => 'bs3_components.php',
+    'Bootstrap 3 Javascript' => 'bs3_javascript.php',
+    'Bootswatch 3 Examples' => 'bootswatch3.php',
+    'Bootstrap 4 alpha 4 docs' => 'docs/4.0.0-alpha.4/getting-started/introduction/index.php',
 );
 
 echo html_writer::start_tag('ul');

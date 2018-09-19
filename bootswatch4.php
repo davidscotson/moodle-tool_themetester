@@ -25,7 +25,9 @@
 require_once(dirname(__FILE__) . '/../../../config.php');
 require_once($CFG->libdir . '/adminlib.php');
 
-$strheading = 'Theme Tester: Bootswatch 4 beta 2 CSS';
+$PAGE->requires->js_call_amd('tool_themetester/bootswatch', 'init');
+
+$strheading = 'Theme Tester: Bootswatch 4 Examples page';
 $url = new moodle_url('/admin/tool/themetester/bootswatch.php');
 
 // Start setting up the page.
@@ -40,7 +42,60 @@ echo $OUTPUT->header();
 echo html_writer::link(new moodle_url('index.php'), '&laquo; Back to index');
 echo $OUTPUT->heading($strheading);
 ?>
-
+<style>
+.bs-docs-section {
+ margin-top:4em
+}
+.bs-docs-section .page-header h1 {
+ padding:2rem 0;
+ font-size:3rem
+}
+.bs-component {
+ position:relative
+}
+.bs-component+.bs-component {
+ margin-top:1rem
+}
+.bs-component .card {
+ margin-bottom:1rem
+}
+.bs-component .modal {
+ position:relative;
+ top:auto;
+ right:auto;
+ left:auto;
+ bottom:auto;
+ z-index:1;
+ display:block
+}
+.bs-component .modal-dialog {
+ width:90%
+}
+.bs-component .popover {
+ position:relative;
+ display:inline-block;
+ width:220px;
+ margin:20px
+}
+#source-button {
+ position:absolute;
+ top:0;
+ right:0;
+ z-index:100;
+ font-weight:bold
+}
+#source-modal pre {
+ max-height:calc(100vh - 11rem);
+ background-color:rgba(0,0,0,0.7);
+ color:rgba(255,255,255,0.7)
+}
+.nav-tabs {
+ margin-bottom:15px
+}
+.progress {
+ margin-bottom:10px
+}
+</style>
 
     <div class="container">
 
@@ -1445,5 +1500,4 @@ echo $OUTPUT->heading($strheading);
 
     </div>
 <?php
-// TODO add JS from original site to make the Modal and Popup examples work.
 echo $OUTPUT->footer();
