@@ -26,7 +26,7 @@ require_once(dirname(__FILE__) . '/../../../config.php');
 require_once($CFG->libdir . '/adminlib.php');
 
 $strheading = 'Theme Tester: Bootswatch 3 CSS';
-$url = new moodle_url('/admin/tool/themetester/bootswatch.php');
+$url = new moodle_url('/admin/tool/themetester/bootswatch3.php');
 
 // Start setting up the page.
 $PAGE->set_context(context_system::instance());

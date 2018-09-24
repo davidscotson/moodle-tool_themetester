@@ -28,7 +28,7 @@ require_once($CFG->libdir . '/adminlib.php');
 $PAGE->requires->js_call_amd('tool_themetester/bootswatch', 'init');
 
 $strheading = 'Theme Tester: Bootswatch 4 Examples page';
-$url = new moodle_url('/admin/tool/themetester/bootswatch.php');
+$url = new moodle_url('/admin/tool/themetester/bootswatch4.php');
 
 // Start setting up the page.
 $PAGE->set_context(context_system::instance());
